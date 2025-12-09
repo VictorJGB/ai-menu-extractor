@@ -1,49 +1,45 @@
-import os
 import json
-from dotenv import load_dotenv
 from pathlib import Path
 
-from src.pdf_reader import read_pdf
-from src.extractor import config_gemini, extrair_dados
-from src.excel_generator import carregar_json, transformar_produtos, gerar_excel
+from src.extractor import extract_pdf, extract_txt
+from src.excel_generator import transform_products, generate_excel
 
 
 def main():
-    load_dotenv()
+    file_type = input("Escolha o tipo de arquivo (pdf/txt): ").strip().lower()
 
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY not found in environment variables.")
+    if file_type not in ["pdf", "txt"]:
+        print("Opção inválida.")
+        return
 
-    pdf_path = "data/cardapio.pdf"
+    file_path = input("Digite o caminho do arquivo: ").strip()
+    file_path = Path(file_path)
 
-    print("Lendo o arquivo PDF...")
-    pdf_text = read_pdf(pdf_path)
+    if not file_path.exists():
+        print("Arquivo não encontrado.")
+        return
 
-    print("Configurando o modelo Gemini...")
-    model = config_gemini(api_key)
-
-    print("Extraindo dados do texto...")
-    json_data = extrair_dados(model, pdf_text)
-
-    print("Salvando resultados...")
-    with open("output/cardapio.json", "w", encoding="utf-8") as f:
-        f.write(json_data)
-
-    print("Cardápio verificado!")
+    if file_type == "pdf":
+        print("Extraindo dados do PDF...")
+        data = extract_pdf(file_path)
+    else:
+        print("Extraindo dados do TXT...")
+        data = extract_txt(file_path)
 
     base_dir = Path("output")
     base_dir.mkdir(exist_ok=True)
 
-    caminho_json = base_dir / "cardapio.json"
-    caminho_excel = base_dir / "cardapio.xlsx"
+    json_path = base_dir / "cardapio.json"
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
-    print("Gerando arquivo Excel...")
-    dados = carregar_json(caminho_json)
-    produtos_transformados = transformar_produtos(dados)
-    gerar_excel(produtos_transformados, caminho_excel)
+    print("Arquivo JSON gerado com sucesso em:", json_path)
 
-    print("Arquivo Excel gerado com sucesso em:", caminho_excel)
+    products = transform_products(data)
+    excel_path = base_dir / "cardapio.xlsx"
+    generate_excel(products, excel_path)
+
+    print("Arquivo Excel gerado com sucesso em:", excel_path)
 
 
 if __name__ == "__main__":

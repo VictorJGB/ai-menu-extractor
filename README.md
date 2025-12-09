@@ -27,7 +27,7 @@
 
 ## About The Project
 
-An Gemini AI PDP/TEXT menu extractor made with python.
+This project its an Gemini AI PDP/TEXT menu extractor made with python. Your goal its to automate the extraction and organization of product data from PDF and text files. It processes raw inputs, structures the information, and generates a standardized Excel (.xlsx) spreadsheet containing product name, reference, category, pricing, and other key attributes. This way we can streamline catalog creation and data migration workflows by providing an efficient, reproducible, and extensible data-processing pipeline.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -36,7 +36,6 @@ An Gemini AI PDP/TEXT menu extractor made with python.
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 - ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
 - ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
--
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -46,8 +45,7 @@ An Gemini AI PDP/TEXT menu extractor made with python.
 
 ### Prerequisites
 
-- Python v3.11.9+
-- [Download Python](https://www.python.org/downloads/)
+- Python v3.11.9+ ([Download Python](https://www.python.org/downloads/))
 
 - pip
   ```sh
@@ -71,6 +69,12 @@ An Gemini AI PDP/TEXT menu extractor made with python.
 
 ## Usage
 
+Before all, make sure that you have a <code>.env</code> file with your <code>GEMINI_API_KEY</code> value.
+```sh
+e.g. GEMINI_API_KEY=SomeApIKeYValue
+```
+Don't know how to generate the API key? See more on: [Google AI Studio](https://aistudio.google.com/).
+
 On the project folder, run
 
 ```sh
@@ -82,9 +86,22 @@ pdf or txt
 ```
 After that, paste the file path so that the system can read it
 ```sh
-e.g C:\Users\User\Documents\menu.pdf
+e.g. C:\Users\User\Documents\menu.pdf
 ```
-And that's it, the system its going to read the file, extract its menu infos and create a cardapio.xlsx inside the output folder with those infos.
+And that's it, the system its going to read the file, extract its information and create a file name <code>cardapio.xlsx</code> inside the <code>output</code> folder.
+
+OBS: If you choose the <code>txt</code> file type, be sure that the file is following the format bellow, otherwise, it going tho throw an error.
+  ```sh
+  category
+    product 01 R$price
+    product 02 R$price
+
+  category 02
+    product 01 R$price
+    product 02 R$price
+
+  ...
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -47,7 +47,7 @@ An Gemini AI PDP/TEXT menu extractor made with python.
 ### Prerequisites
 
 - Python v3.11.9+
-  ![Download Python](https://www.python.org/downloads/)
+- [Download Python](https://www.python.org/downloads/)
 
 - pip
   ```sh
@@ -76,6 +76,15 @@ On the project folder, run
 ```sh
 python main.py
 ```
+Then, choose the file type you want to extract the menu
+```sh
+pdf or txt
+```
+After that, paste the file path so that the system can read it
+```sh
+e.g C:\Users\User\Documents\menu.pdf
+```
+And that's it, the system its going to read the file, extract its menu infos and create a cardapio.xlsx inside the output folder with those infos.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

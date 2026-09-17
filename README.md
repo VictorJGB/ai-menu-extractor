@@ -27,7 +27,7 @@
 
 ## About The Project
 
-This project its an Gemini AI PDP/TEXT menu extractor made with python. Your goal its to automate the extraction and organization of product data from PDF and text files. It processes raw inputs, structures the information, and generates a standardized Excel (.xlsx) spreadsheet containing product name, reference, category, pricing, and other key attributes. This way we can streamline catalog creation and data migration workflows by providing an efficient, reproducible, and extensible data-processing pipeline.
+This project its an Gemini AI PDP/TEXT menu extractor made with python. Your goal its to automate the extraction and organization of product data from PDF and text files. It processes raw inputs, structures the information, and generates a standardized Excel (.xlsx) spreadsheet containing product name, reference, category, pricing, and other key attributes. This way we can streamline catalog creation and data migration workflows by providing an efficient, reproducible, and extensible data-processing pipeline. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

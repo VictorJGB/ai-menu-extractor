@@ -1,191 +1,133 @@
 [
     {
-        "categoria": "PRINCIPAIS",
+        "categoria": "CARNES",
         "itens": [
             {
-                "nome": "GALINHA CAIPIRA",
-                "preco": 110.0
+                "nome": "MAMINHA KG",
+                "preco": 120.0
             },
             {
-                "nome": "FILÉ A PARMEGIANA",
-                "preco": 85.0
+                "nome": "PERNIL DE PORCO KG",
+                "preco": 70.0
             },
             {
-                "nome": "PEIXE COMPLETO",
-                "preco": 85.0
+                "nome": "FILÉ DE CARNEIRO KG",
+                "preco": 120.0
             },
             {
-                "nome": "PEIXADA COMPLETA",
-                "preco": 85.0
+                "nome": "COSTELA CARNEIRO KG",
+                "preco": 120.0
             },
             {
-                "nome": "PEIXE SEM ESPINHA COMPLETO",
-                "preco": 90.0
-            },
-            {
-                "nome": "CARNE DE SOL NA NATA",
-                "preco": 55.0
-            },
-            {
-                "nome": "CARNE DE SOL - 300G",
-                "preco": 50.0
-            },
-            {
-                "nome": "CARNE DE SOL - 150G",
+                "nome": "PEIXE ASSADO",
                 "preco": 35.0
             },
             {
-                "nome": "CAMARÃO AO MOLHO BRANCO - 300G",
-                "preco": 50.0
+                "nome": "LINGUIÇA CARNEIRO",
+                "preco": 8.0
             },
             {
-                "nome": "BIFE TRINCHADO COM FRITAS - 300G",
-                "preco": 40.0
+                "nome": "LINGUIÇA FRANGO",
+                "preco": 5.0
             },
             {
-                "nome": "BIFE TRINCHADO COM FRITAS-150G",
-                "preco": 27.0
+                "nome": "LINGUIÇA MISTA",
+                "preco": 5.0
             },
             {
-                "nome": "COSTELINHA DE PORCO",
-                "preco": 30.0
-            },
-            {
-                "nome": "FILÉ TRINCHADO COM FRITAS",
-                "preco": 55.0
-            },
-            {
-                "nome": "PARMEGIANA DE FRANGO",
-                "preco": 60.0
-            },
-            {
-                "nome": "MACARRÃO CARBONARA",
-                "preco": 50.0
-            },
-            {
-                "nome": "COSTELA DE GADO",
-                "preco": 50.0
-            },
-            {
-                "nome": "CAMARÃO AO ALHO E OLEO - 300G",
-                "preco": 25.0
-            },
-            {
-                "nome": "CALABRESA ACEBOLADA COM FRITAS",
-                "preco": 27.0
+                "nome": "CODORNA",
+                "preco": 9.0
             }
         ]
     },
     {
-        "categoria": "DIVERSOS",
+        "categoria": "GUARNIÇÕES",
         "itens": [
             {
-                "nome": "BATATA FRITA-300G",
-                "preco": 15.0
-            },
-            {
-                "nome": "PIABA",
-                "preco": 15.0
-            },
-            {
-                "nome": "TORRESMO",
-                "preco": 17.0
-            },
-            {
-                "nome": "MACAXEIRA FRITA",
-                "preco": 15.0
-            },
-            {
-                "nome": "MACAXEIRA CREMOSA",
-                "preco": 15.0
-            },
-            {
-                "nome": "1/2 BAIÃO SIMPLES",
-                "preco": 13.0
-            },
-            {
                 "nome": "ARROZ",
-                "preco": 10.0
-            },
-            {
-                "nome": "MACARRÃO ALHO E OLEO",
-                "preco": 12.0
-            },
-            {
-                "nome": "MUNGUZÁ",
-                "preco": 10.0
-            },
-            {
-                "nome": "QUEIJO C/ ORÉGANO",
-                "preco": 15.0
-            },
-            {
-                "nome": "FEIJÃO CREMOSO",
-                "preco": 27.0
-            },
-            {
-                "nome": "FRITAS RECHEADAS - 400G",
-                "preco": 25.0
-            },
-            {
-                "nome": "TRIPA",
-                "preco": 17.0
-            },
-            {
-                "nome": "SALADA VERDE",
                 "preco": 8.0
             },
             {
-                "nome": "BAIÃO CREMOSO",
-                "preco": 22.0
-            },
-            {
-                "nome": "1/2 BAIÃO CREMOSO",
-                "preco": 15.0
-            },
-            {
-                "nome": "BAIÃO SIMPLES",
-                "preco": 15.0
-            },
-            {
-                "nome": "COXINHA DE FRANGO",
-                "preco": 23.0
-            },
-            {
-                "nome": "CAMARÃO EMPANADO",
-                "preco": 25.0
-            },
-            {
-                "nome": "BOLINHA DE CAMARÃO",
-                "preco": 14.0
-            },
-            {
-                "nome": "CALDINHO DE FEIJÃO",
-                "preco": 10.0
-            },
-            {
-                "nome": "CODORNA",
-                "preco": 10.0
-            },
-            {
-                "nome": "ISCA DE PEIXE",
-                "preco": 40.0
-            },
-            {
-                "nome": "FIGADO ACEBOLADO",
+                "nome": "FEIJOADA",
                 "preco": 20.0
             },
             {
-                "nome": "BOLINHAS",
-                "preco": 15.0
+                "nome": "BAIÃO COMUM",
+                "preco": 12.0
             },
             {
-                "nome": "CASADINHO",
-                "preco": 15.0
+                "nome": "BAIÃO CREMOSO",
+                "preco": 14.0
             },
             {
-                "nome": "ESCONDIDINHO",
-                "preco": 25.0
+                "nome": "BATATA FRITA",
+                "preco": 14.0
+            },
+            {
+                "nome": "MACAXEIRA FRITA",
+                "preco": 12.0
+            },
+            {
+                "nome": "MACAXEIRA COZIDA",
+                "preco": 12.0
+            },
+            {
+                "nome": "MUNGUNZÁ",
+                "preco": 8.0
+            }
+        ]
+    },
+    {
+        "categoria": "SALADA TRADICIONAL R412,00",
+        "itens": []
+    },
+    {
+        "categoria": "PETISCOS",
+        "itens": [
+            {
+                "nome": "TORRESMO",
+                "preco": 10.0
+            },
+            {
+                "nome": "QUEIJO",
+                "preco": 12.0
+            },
+            {
+                "nome": "OVO DE CODORNA",
+                "preco": 8.0
+            },
+            {
+                "nome": "PÃO DE ALHO",
+                "preco": 7.0
+            },
+            {
+                "nome": "BOLINHAS DE MACAXEIRA",
+                "preco": 13.0
+            },
+            {
+                "nome": "CROQUETE DE CAMARÃO",
+                "preco": 13.0
+            }
+        ]
+    },
+    {
+        "categoria": "SOBREMESAS",
+        "itens": [
+            {
+                "nome": "PUDIM",
+                "preco": 7.0
+            },
+            {
+                "nome": "MOUSSE DE LIMÃO",
+                "preco": 5.0
+            },
+            {
+                "nome": "PAVÊ DE CHOCOLATE",
+                "preco": 7.0
+            },
+            {
+                "nome": "GELADO DE ABACAXI",
+                "preco": 6.0
             }
         ]
     },
@@ -193,199 +135,244 @@
         "categoria": "SUCOS",
         "itens": [
             {
-                "nome": "Cajá Copo S/ Leite",
-                "preco": 4.0
-            },
-            {
-                "nome": "Cajá Copo C/ Leite",
-                "preco": 6.0
-            },
-            {
-                "nome": "Goiaba Copo S/ Leite",
-                "preco": 4.0
-            },
-            {
-                "nome": "Goiaba Copo C/ Leite",
-                "preco": 6.0
-            },
-            {
-                "nome": "Maracujá Copo S/ Leite",
-                "preco": 6.0
-            },
-            {
-                "nome": "Maracujá Copo C/ Leite",
-                "preco": 8.0
-            },
-            {
-                "nome": "Cajá 500ml S/ Leite",
-                "preco": 10.0
-            },
-            {
-                "nome": "Cajá 500ml C/ Leite",
-                "preco": 13.0
-            },
-            {
-                "nome": "Goiaba 500ml S/ Leite",
-                "preco": 10.0
-            },
-            {
-                "nome": "Goiaba 500ml C/ Leite",
-                "preco": 13.0
-            },
-            {
-                "nome": "Maracujá 500ml S/ Leite",
-                "preco": 12.0
-            },
-            {
-                "nome": "Maracujá 500ml C/ Leite",
-                "preco": 15.0
-            },
-            {
-                "nome": "Cajá Jarra 1L S/ Leite",
-                "preco": 18.0
-            },
-            {
-                "nome": "Cajá Jarra 1L C/ Leite",
-                "preco": 20.0
-            },
-            {
-                "nome": "Goiaba Jarra 1L S/ Leite",
-                "preco": 18.0
-            },
-            {
-                "nome": "Goiaba Jarra 1L C/ Leite",
-                "preco": 20.0
-            },
-            {
-                "nome": "Maracujá Jarra 1L S/ Leite",
-                "preco": 20.0
-            },
-            {
-                "nome": "Maracujá Jarra 1L C/ Leite",
-                "preco": 23.0
-            }
-        ]
-    },
-    {
-        "categoria": "CARNE NA BRASA",
-        "itens": [
-            {
-                "nome": "PICANHA - 100G",
-                "preco": 15.0
-            },
-            {
-                "nome": "LINGUIÇA",
-                "preco": 5.0
-            },
-            {
-                "nome": "CONTRA FILÉ - 100G",
-                "preco": 13.0
-            },
-            {
-                "nome": "PORCO ASSADO - 100G",
-                "preco": 10.0
-            }
-        ]
-    },
-    {
-        "categoria": "BEBIDAS FRIAS",
-        "itens": [
-            {
-                "nome": "COCA COLA KS",
-                "preco": 5.0
-            },
-            {
-                "nome": "COCA COLA 1L",
-                "preco": 9.0
-            },
-            {
-                "nome": "COCA COLA 2L",
-                "preco": 15.0
-            },
-            {
-                "nome": "CAJUINA 600ML",
+                "nome": "COPO",
                 "preco": 7.0
             },
             {
-                "nome": "CAJUINA 1L",
-                "preco": 9.0
-            },
-            {
-                "nome": "CAJUINA 2L",
-                "preco": 15.0
-            },
-            {
-                "nome": "ÁGUA 500ML - S/GÁS",
-                "preco": 2.0
-            },
-            {
-                "nome": "ÁGUA 500ML - C/GÁS",
-                "preco": 3.0
-            },
-            {
-                "nome": "COCO JARRA",
-                "preco": 10.0
-            },
-            {
-                "nome": "REFRIGERANTE LATA",
-                "preco": 5.0
-            },
-            {
-                "nome": "DRINK",
+                "nome": "JARRA DE SUCO PEQUENA",
                 "preco": 12.0
+            },
+            {
+                "nome": "JARRA DE SUCO GRANDE",
+                "preco": 18.0
+            },
+            {
+                "nome": "ADICIONAL C/ LEITE",
+                "preco": 1.0
             }
         ]
     },
     {
-        "categoria": "BEBIDAS QUENTES",
+        "categoria": "CERVEJAS",
         "itens": [
             {
-                "nome": "DREHER DOSE",
-                "preco": 4.0
+                "nome": "DEVASSA",
+                "preco": 10.0
             },
             {
-                "nome": "DREHER COPO",
+                "nome": "AMSTEL",
+                "preco": 10.0
+            },
+            {
+                "nome": "HEINEKEN",
+                "preco": 15.0
+            },
+            {
+                "nome": "SKOL",
+                "preco": 10.0
+            },
+            {
+                "nome": "BRAHMA",
+                "preco": 10.0
+            },
+            {
+                "nome": "BRAHMA DUPLO MALTE",
+                "preco": 10.0
+            },
+            {
+                "nome": "SPATEN",
                 "preco": 12.0
+            },
+            {
+                "nome": "BUDWEISER",
+                "preco": 11.0
+            },
+            {
+                "nome": "STELLA",
+                "preco": 14.0
+            },
+            {
+                "nome": "ITAIPAVA",
+                "preco": 8.0
+            },
+            {
+                "nome": "ITAIPAVA PETRA",
+                "preco": 9.0
+            },
+            {
+                "nome": "BOHEMIA",
+                "preco": 10.0
+            },
+            {
+                "nome": "ORIGINAL",
+                "preco": 12.0
+            },
+            {
+                "nome": "PURO MALTE",
+                "preco": 10.0
+            },
+            {
+                "nome": "CERVEJA S/ ALCOOL",
+                "preco": 8.0
+            },
+            {
+                "nome": "CERVEJA LONG NECK",
+                "preco": 8.0
+            }
+        ]
+    },
+    {
+        "categoria": "CACHAÇAS",
+        "itens": [
+            {
+                "nome": "YPIÓCA COPO",
+                "preco": 10.0
             },
             {
                 "nome": "YPIOCA DOSE",
-                "preco": 3.0
-            },
-            {
-                "nome": "YPIOCA COPO",
-                "preco": 7.0
-            },
-            {
-                "nome": "WHISKY BLACK & WHITE",
-                "preco": 7.0
-            },
-            {
-                "nome": "VINHO QUINTA DO MORGADO",
-                "preco": 25.0
-            },
-            {
-                "nome": "ENERGÉTICO",
-                "preco": 15.0
-            },
-            {
-                "nome": "VODKA DOSE",
                 "preco": 5.0
             },
             {
-                "nome": "VODKA COPO",
+                "nome": "CACHAÇA 51",
+                "preco": 5.0
+            },
+            {
+                "nome": "CACHAÇA PITU",
+                "preco": 5.0
+            },
+            {
+                "nome": "MATUTA",
+                "preco": 5.0
+            },
+            {
+                "nome": "TEACHER'S",
+                "preco": 7.0
+            },
+            {
+                "nome": "BLACK & WHITE",
+                "preco": 7.0
+            },
+            {
+                "nome": "OLD EIGHT",
+                "preco": 5.0
+            },
+            {
+                "nome": "RED LABEL",
                 "preco": 12.0
             },
             {
-                "nome": "CAMPARI DOSE",
+                "nome": "OLD PARR",
+                "preco": 14.0
+            },
+            {
+                "nome": "ORLOFF",
+                "preco": 6.0
+            },
+            {
+                "nome": "SMIRNOFF ICE",
+                "preco": 10.0
+            },
+            {
+                "nome": "CAMPARI",
+                "preco": 7.0
+            },
+            {
+                "nome": "MARTINI",
+                "preco": 6.0
+            },
+            {
+                "nome": "RUM MONTILLA",
                 "preco": 5.0
             },
             {
-                "nome": "YPIOCA 150 ANOS DOSE",
+                "nome": "DREHER",
+                "preco": 5.0
+            },
+            {
+                "nome": "CONHAQUE S.J. DA BARRA",
+                "preco": 5.0
+            },
+            {
+                "nome": "VINHO COPO",
+                "preco": 6.0
+            },
+            {
+                "nome": "VINHO GARRAFA",
+                "preco": 25.0
+            },
+            {
+                "nome": "RED BULL",
+                "preco": 12.0
+            },
+            {
+                "nome": "TNT",
+                "preco": 12.0
+            }
+        ]
+    },
+    {
+        "categoria": "REFRIGERANTE",
+        "itens": [
+            {
+                "nome": "COCA-COLA 2L",
+                "preco": 15.0
+            },
+            {
+                "nome": "COCA-COLA 1L",
+                "preco": 12.0
+            },
+            {
+                "nome": "COCA-COLA 600ml",
+                "preco": 9.0
+            },
+            {
+                "nome": "COCA-COLA KS",
+                "preco": 5.0
+            },
+            {
+                "nome": "CAJUÍNA 2L",
+                "preco": 14.0
+            },
+            {
+                "nome": "CAJUÍNA 1L",
+                "preco": 12.0
+            },
+            {
+                "nome": "CAJUINA 600ML",
                 "preco": 8.0
             },
             {
-                "nome": "YPIOCA 150 ANOS COPO",
-                "preco": 15.0
+                "nome": "GUARANÁ 1L",
+                "preco": 10.0
+            },
+            {
+                "nome": "GUARANÁ 600ML",
+                "preco": 8.0
+            },
+            {
+                "nome": "REFRIGERANTE LATA",
+                "preco": 6.0
+            }
+        ]
+    },
+    {
+        "categoria": "ÁGUAS",
+        "itens": [
+            {
+                "nome": "H2O LIMONETO",
+                "preco": 7.0
+            },
+            {
+                "nome": "ÁGUA S/ GÁS",
+                "preco": 3.0
+            },
+            {
+                "nome": "ÁGUA C/ GÁS",
+                "preco": 3.5
+            },
+            {
+                "nome": "ÁGUA DE COCO",
+                "preco": 5.0
             }
         ]
     }

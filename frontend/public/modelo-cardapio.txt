@@ -1,0 +1,10 @@
+CATEGORIA
+PRODUTO R$10,00
+
+LANCHES
+Hambúrguer clássico R$25,00
+Batata frita R$15,00
+
+BEBIDAS
+Suco de laranja R$10,00
+Água mineral R$5,00

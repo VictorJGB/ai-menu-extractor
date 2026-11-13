@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Segoe UI", sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --background: #ffffff;
+  --card: #ffffff;
+  --primary: #014751;
+  --primary-hover: #003640;
+  --primary-foreground: #ffffff;
+  --secondary: #77bd43;
+  --secondary-hover: #8dcc5b;
+  --secondary-foreground: #014751;
+  --foreground: #18353a;
+  --muted: #f4f7f8;
+  --muted-foreground: #586b70;
+  --accent: #edf6e6;
+  --accent-foreground: #014751;
+  --border: #d8e2e4;
+  --ring: #014751;
+  --destructive: #b42318;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+}
+
+button:not(:disabled),
+a {
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "corepack pnpm install --frozen-lockfile",
+  "buildCommand": "corepack pnpm --dir frontend run build",
+  "outputDirectory": "frontend/dist",
+  "functions": {
+    "api/extract.py": {
+      "maxDuration": 300,
+      "includeFiles": "backend/**",
+      "excludeFiles": "{.venv/**,frontend/**,output/**,tests/**,**/__pycache__/**,.env,.env.*}"
+    }
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/api(?:/.*)?", "status": 404 },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

@@ -69,6 +69,90 @@ This project its an Gemini AI PDP/TEXT menu extractor made with python. Your goa
 
 ## Usage
 
+### Deploy na Vercel
+
+O frontend e a API são publicados juntos, no mesmo domínio. Importe este
+repositório na Vercel, mantenha **Root Directory** na raiz (`.`) e
+**Framework Preset** em **Other**. O `vercel.json` já define instalação,
+build, saída estática e função Python. Cadastre `GEMINI_API_KEY` nas variáveis
+de ambiente de Production e Preview e faça o deploy.
+
+### Interface web (React + TypeScript)
+
+Para iniciar frontend e backend juntos, instale as dependências do workspace
+na raiz (uma vez) e execute:
+
+```powershell
+corepack.cmd pnpm install
+corepack.cmd pnpm run dev
+```
+
+É necessário ter o ambiente Python `.venv` com `requirements.txt` instalado,
+conforme os comandos abaixo. Acesse `http://localhost:5173`; a API usa a porta
+8000. Use `Ctrl+C` para encerrar. Se um dos processos encerrar, o outro também
+será encerrado.
+
+Para iniciar cada processo separadamente, na raiz:
+
+```powershell
+corepack.cmd pnpm run dev:frontend
+corepack.cmd pnpm run dev:backend
+```
+
+A interface em `frontend/` usa Vite, Tailwind CSS, componentes shadcn/ui e Biome.
+Aceita um PDF, JPG/JPEG ou TXT por vez, com até 4 MB, e oferece download de
+`cardapio.xlsx`. PDF e JPG usam o Gemini e exigem `GEMINI_API_KEY` no `.env`
+do backend. TXT é processado localmente, sem chamada à IA. A chave nunca é
+enviada ao navegador.
+
+Na raiz, instale as dependências e inicie a API:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn backend.app:app --reload --host 127.0.0.1 --port 8000
+```
+
+Em outro terminal, inicie o frontend:
+
+```powershell
+cd frontend
+corepack.cmd pnpm run dev
+```
+
+Acesse `http://localhost:5173`. O proxy do Vite encaminha `/api` para a API
+em `http://127.0.0.1:8000`. Para produção, sirva `frontend/dist` e encaminhe
+`/api` para o backend no mesmo domínio.
+
+```powershell
+cd frontend
+corepack.cmd pnpm run check
+corepack.cmd pnpm run build
+```
+
+Para executar os testes da API, na raiz:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+O TXT deve ser salvo em UTF-8, com a categoria antes dos produtos e os preços
+com duas casas decimais:
+
+```text
+CATEGORIA
+PRODUTO R$10,00
+```
+
+O botão **Baixar modelo TXT** disponibiliza
+[`modelo-cardapio.txt`](frontend/public/modelo-cardapio.txt).
+A API reutiliza `transform_products` e `generate_excel`, em `backend/services/`, mantendo a ordem das
+colunas: Nome, Referência, Categoria nível 1, Marca, NCM, Controla estoque e
+Preço de venda. Mantém também referências sequenciais, marca `padrão`, NCM
+`0000.00.00` e controle de estoque `0`. Os arquivos de cada conversão são
+temporários e não sobrescrevem os arquivos existentes em `output/`.
+
+### Interface de terminal
+
 Before all, make sure that you have a <code>.env</code> file with your <code>GEMINI_API_KEY</code> value.
 ```sh
 e.g. GEMINI_API_KEY=SomeApIKeYValue

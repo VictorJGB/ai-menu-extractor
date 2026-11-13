@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
 
-from src.extractor import extract_pdf, extract_txt
-from src.excel_generator import transform_products, generate_excel
+from backend.services.extractor import extract_pdf, extract_txt
+from backend.services.excel_generator import transform_products, generate_excel
 
 
 def main():

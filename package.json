@@ -1,0 +1,14 @@
+{
+  "name": "ai-menu-extractor",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.28.2",
+  "scripts": {
+    "dev": "concurrently --kill-others --names frontend,backend --prefix-colors cyan,green \"corepack pnpm run dev:frontend\" \"corepack pnpm run dev:backend\"",
+    "dev:frontend": "corepack pnpm --dir frontend run dev",
+    "dev:backend": "node scripts/dev-backend.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

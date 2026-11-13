@@ -1,10 +1,12 @@
 import json
 import os
+import re
+from pathlib import Path
 
 from dotenv import load_dotenv
 from google import genai
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 
 
 def config_gemini():
@@ -56,8 +58,8 @@ def extract_txt(txt_path):
     categories = []
     current_category = None
 
-    with open(txt_path, "r", encoding="utf-8") as file:
-        for line in file:
+    with open(txt_path, "r", encoding="utf-8-sig") as file:
+        for line_number, line in enumerate(file, start=1):
             current_line = line.strip()
 
             if not current_line:
@@ -75,8 +77,12 @@ def extract_txt(txt_path):
             name_part, price_part = current_line.rsplit("R$", 1)
 
             name = name_part.strip()
+            if current_category is None:
+                raise ValueError(f"Linha {line_number}: informe a CATEGORIA antes do produto.")
+            if not name or not re.fullmatch(r"\d+(?:\.\d{3})*,\d{2}", price_part.strip()):
+                raise ValueError(f"Linha {line_number}: use o formato PRODUTO R$10,00.")
             price = float(
-                price_part.replace(",", ".").strip()
+                price_part.replace(".", "").replace(",", ".").strip()
             )
 
             current_category["itens"].append({
